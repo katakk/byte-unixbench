@@ -104,11 +104,11 @@ SOURCES = arith.c big.c context1.c \
 	dhry_1.c dhry_2.c dhry.h whets.c ubgears.c
 TESTS = sort.src cctest.c dc.dat large.txt
 
-ifdef GRAPHIC_TESTS
-GRAPHIC_BINS = $(PROGDIR)/ubgears
-else
+#ifdef GRAPHIC_TESTS
+#GRAPHIC_BINS = $(PROGDIR)/ubgears
+#else
 GRAPHIC_BINS =
-endif
+#endif
 
 # Program binaries.
 BINS = $(PROGDIR)/arithoh $(PROGDIR)/register $(PROGDIR)/short \
